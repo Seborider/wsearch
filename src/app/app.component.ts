@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Page } from 'src/types';
 import { WikipediaService } from './wikipedia.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { WikipediaService } from './wikipedia.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pages = [];
+  pages: Page[] = [];
   constructor(private wikipedia: WikipediaService) {
   }
   
